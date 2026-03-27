@@ -99,7 +99,7 @@ function checkout() {
     }
     
     // Show toast notification
-    toast.innerHTML = \`🚀 Order processed for $\${cartTotal.toFixed(2)}!\`;
+    toast.innerHTML = `🚀 Order processed for $${cartTotal.toFixed(2)}!`;
     toast.classList.add("show");
     
     // Hide toast after 3 seconds
