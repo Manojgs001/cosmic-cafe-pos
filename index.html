@@ -1,45 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmic Cafe POS | Intergalactic Kiosk</title>
     <!-- Premium Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header>
-        <h1>The Cosmic Cafe</h1>
-        <p>Intergalactic Point of Sale System</p>
+      <h1>The Cosmic Cafe</h1>
+      <p>Intergalactic Point of Sale System</p>
     </header>
 
     <div class="container">
-        <section id="menu-section" class="panel">
-            <h2>Cosmic Menu</h2>
-            <div id="menu-container">
-                <!-- JavaScript will inject menu items here -->
-            </div>
-        </section>
+      <section id="menu-section" class="panel">
+        <h2>Cosmic Menu</h2>
+        <div id="menu-container">
+          <!-- JavaScript will inject menu items here -->
+        </div>
+      </section>
 
-        <section id="cart-section" class="panel">
-            <h2>Your Tray</h2>
-            <ul id="cart-items">
-                <!-- JavaScript will inject cart items here -->
-                <li style="color: rgba(255,255,255,0.5); text-align: center; padding: 1rem 0;">Your tray is empty</li>
-            </ul>
-            <div class="cart-total">
-                <span>Total Due:</span>
-                <span>$<span id="total-price">0.00</span></span>
-            </div>
-            <button id="checkout-btn" onclick="checkout()">Initiate Checkout</button>
-        </section>
+      <section id="cart-section" class="panel">
+        <h2>Your Tray</h2>
+        <ul id="cart-items">
+          <!-- JavaScript will inject cart items here -->
+          <li
+            style="
+              color: rgba(255, 255, 255, 0.5);
+              text-align: center;
+              padding: 1rem 0;
+            "
+          >
+            Your tray is empty
+          </li>
+        </ul>
+        <div class="cart-total">
+          <span>Total Due:</span>
+          <span>$<span id="total-price">0.00</span></span>
+        </div>
+        <button id="checkout-btn" onclick="checkout()">
+          Initiate Checkout
+        </button>
+      </section>
     </div>
 
     <div id="toast" class="toast">Order processed successfully!</div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
-
-
